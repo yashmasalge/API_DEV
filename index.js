@@ -135,7 +135,7 @@ try{
 
 
 //creating a port 3000 
-app.listen(3000,() =>
+app.listen(process.env.PORT,() =>
  connectDB().then((data) =>
  console.log("Server started successfully"))
  .catch((error) => console.log(error))
